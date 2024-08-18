@@ -512,21 +512,21 @@ a {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buttom-modal {
-    position: absolute;
-    display: flex;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    top: 24px;
-    right: 24px;
-    background-color: #e7e9fc;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-bottom: 24px;
-    padding: 0;
+  position: absolute;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  top: 24px;
+  right: 24px;
+  background-color: #e7e9fc;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 24px;
+  padding: 0;
 } 
 .buttom-modal:hover,
 .buttom-modal:focus{
@@ -534,40 +534,43 @@ a {
   fill: #fff;
 }
 .text-modal {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-text-align: center;
-color: #2e2f42;
-margin-bottom: 16px;
+ font-weight: 500;
+ font-size: 16px;
+ line-height: 1.5;
+ letter-spacing: 0.02em;
+ text-align: center;
+ color: #2e2f42;
+ margin-bottom: 16px;
 }
 .modal-cont-imput {
   position: relative;
   display: flex;
 }
+.form-wrraper-cont {
+  margin-bottom: 8px;
+}
 .modal-form-label {
-display: block;
-font-family: "Roboto", sans-serif;
-font-weight: 400;
-font-size: 12px;
-line-height: 1.16;
-letter-spacing: 0.04em;
-color: #8e8f99;
-margin-bottom: 4px;
+ display: block;
+ font-family: "Roboto", sans-serif;
+ font-weight: 400;
+ font-size: 12px;
+ line-height: 1.16;
+ letter-spacing: 0.04em;
+ color: #8e8f99;
+ margin-bottom: 4px;
 }
 .modal-input {
-display: block;
-color: #2e2f42;
-border: 1px solid rgba(46, 47, 66, 0.4);
-border-radius: 4px;
-width: 100%;
-height: 40px;
-padding-left: 38px;
-padding-top: 8px;
-padding-bottom: 8px;
-outline: none;
-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ display: block;
+ color: #2e2f42;
+ border: 1px solid rgba(46, 47, 66, 0.4);
+ border-radius: 4px;
+ width: 100%;
+ height: 40px;
+ padding-left: 38px;
+ padding-top: 8px;
+ padding-bottom: 8px;
+ outline: none;
+ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:focus,
 .modal-input:hover {
@@ -578,10 +581,80 @@ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  stroke: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input:focus+ .modal-icon {
+.modal-input:focus+ .modal-icon,
+.modal-input:hover+ .modal-icon {
   fill: #4D5AE5;
 }
+.form-wrraper-cont-comment {
+ font-weight: 400;
+ font-size: 12px;
+ line-height: 1.16667;
+ letter-spacing: 0.04em;
+ color: #8e8f99;
+ margin-bottom: 25px;
+}
+.modal-form-label-comment {
+ display: block;
+ font-family: "Roboto", sans-serif;
+ font-weight: 400;
+ font-size: 12px;
+ line-height: 1.16;
+ letter-spacing: 0.04em;
+ color: #8e8f99;
+ margin-bottom: 4px;
+}
+.modal-textarea {
+ border: 1px solid rgba(46, 47, 66, 0.4);
+ border-radius: 4px;
+ padding: 8px 16px;
+ width: 360px;
+ height: 120px;
+ resize: none;
+ outline: transparent;
+ background-color: transparent;
+ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-textarea:hover,
+.modal-textarea:focus {
+  border-color: #4d5ae5;
+}
+.modal-textarea::placeholder {
+ font-weight: 400;
+ font-size: 12px; 
+ line-height: 1.16667;
+ letter-spacing: 0.04em;
+ color: rgba(46, 47, 66, 0.4);
+}
+.custom-chekbox {
+ border-radius: 2px;
+ border: 1px solid rgba(46, 47, 66, 0.4);
+ width: 16px;
+ height: 16px;
+ display: inline-flex;
+ justify-content: center;
+ align-items: center;
+ margin-right: 8px;
+ background-color: #fff;
+ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox {
 
+}
+.label-checkbox {
+ cursor: pointer;
+ font-weight: 400;
+ font-size: 12px;
+ line-height: 1.17;
+ letter-spacing: 0.04em;
+ color: #8e8f99;
+}
+.checkbox:checked + .label-checkbox > .custom-chekbox {
+  border-color: transparent;
+  background-color: #404bbf;
+}
+.privacy-policy {
+text-decoration: underline;
+color: #4d5ae5;
+}
