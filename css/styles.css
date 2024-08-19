@@ -214,7 +214,8 @@ a {
   color: #2e2f42;
 }
 .images-container {
-  width: 100%;
+  background-color: #f4f4fd;
+  max-width: 100%;
   height: 112px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -222,17 +223,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f4f4fd;
 }
 .icons {
-  box-sizing: border-box;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  width: 264px;
-  height: 112px;
-  padding: 24px 100px;
-  background: #f4f4fd;
-  margin-bottom: 8px;
+   margin: 24px 100px;
 }
 .list-text {
   display: flex;
