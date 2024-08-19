@@ -16,5 +16,3 @@
     refs.modal.classList.toggle("is-open");
   }
 })();
-@Stanislav-vol05
-Comment
