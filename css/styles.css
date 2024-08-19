@@ -551,7 +551,7 @@ a {
   opacity: 0;
   pointer-events: none;
 }
-.backdrop .is-open {
+.backdrop.is-open {
   visibility: visible;
   pointer-events: auto;
   opacity: 1;
