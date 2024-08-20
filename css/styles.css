@@ -368,6 +368,7 @@ a {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfolio-name {
+  padding: 32px 0 0 16px;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
